@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input // <--- aggiungi questo
+ } from '@angular/core';
 
 @Component({
   selector: 'app-macchina',
@@ -6,10 +10,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./macchina.component.css']
 })
 export class MacchinaComponent implements OnInit {
+  @Input() mac: string; // <-- Aggiungi la notazione @input
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+     // Rimuovi l'impostazione del nome
   }
 
+  ngOnInit() {}
 }
