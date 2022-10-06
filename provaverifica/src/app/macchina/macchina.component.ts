@@ -11,9 +11,9 @@ import {
 })
 export class MacchinaComponent implements OnInit {
   @Input() mac: string; // <-- Aggiungi la notazione @input
-
+  pezzi: string[]
   constructor() {
-     // Rimuovi l'impostazione del nome
+     this.pezzi=['viti','bulloni','ferro']
   }
 
   ngOnInit() {}
